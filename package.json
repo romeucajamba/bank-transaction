@@ -1,0 +1,15 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": ""
+  },
+  "keywords": [],
+  "author": "Romeu Cajamba",
+  "license": "ISC",
+  "description": "API REST with Fastify",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
