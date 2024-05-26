@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": ""
+    "server": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "Romeu Cajamba",
   "license": "ISC",
   "description": "API REST with Fastify",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^20.12.12",
+    "eslint": "^9.3.0",
+    "tsx": "^4.11.0",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "fastify": "^4.27.0"
   }
 }
