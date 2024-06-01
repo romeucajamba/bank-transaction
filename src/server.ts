@@ -3,6 +3,9 @@ import fastify from 'fastify';
 
 const server = fastify()
 
+server.get('/home', async () => {
+    
+})
 
 server.listen({
     port: 3333
