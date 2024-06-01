@@ -1,6 +1,7 @@
 import fastify from 'fastify';
 import { connection } from './database/db';
 import { randomUUID } from 'crypto';
+import { env } from './env';
 
 
 const server = fastify()
@@ -18,7 +19,7 @@ server.get('/home', async () => {
 })
 
 server.listen({
-    port: 3333
+    port: env.PORT
 }).then(() => {
     console.log('server running in port 3333')
 })
