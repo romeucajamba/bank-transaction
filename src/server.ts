@@ -1,10 +1,12 @@
 import fastify from 'fastify';
-import { transactions } from './routes/GET/get_data';
+import { transactionsRoute } from './routes/POST/transactions';
 
 const server = fastify()
 
 //Registar plugins ou rotas
-server.register(transactions)
+server.register(transactionsRoute, {
+    prefix: 'transaction'
+})
 
 
 
