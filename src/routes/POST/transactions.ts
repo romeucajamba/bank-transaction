@@ -22,6 +22,7 @@ export async function transactionsRoute(server: FastifyInstance) {
             data:{
                 id: randomUUID(),
                 title,
+                /**Se a transação for credito, vai manter o valor(amount) do jeito que está, se for debito, vai multiplicar por -1 */
                 amount: type == 'credit' ? amount : amount * -1,
             }
         })
