@@ -1,25 +1,15 @@
 import fastify from 'fastify';
-import { connection } from './database/db';
-import { randomUUID } from 'crypto';
-import { env } from './env';
-
+import { transactions } from './routes/GET/get_data';
 
 const server = fastify()
 
-server.get('/home', async () => {
-    
-    const insertData = await connection.trasactions.create({
-        data:{
-            id: randomUUID(),
-            title: 'Testando a criação de transação',
-            amount: 100
-        }
-    })
-    return insertData
-})
+//Registar plugins ou rotas
+server.register(transactions)
+
+
 
 server.listen({
-    port: env.PORT
+    port: 3333
 }).then(() => {
     console.log('server running in port 3333')
 })
