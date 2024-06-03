@@ -39,20 +39,35 @@ Um sistema para criação de transações, permitindo a consulta de cada transa�
 
 ######
 ### 
-###
+### Registando todas as rotas/plugins 
 <img src="./assets/server.png" height="500" width="900" />
+
+### Rota de para cadastro de transação
 <img src="./assets/register.png" height="500" width="900" />
+
+### rota para pegar transações pelo id
 <img src="./assets/serachById.png" height="500" width="900" />
+
+### Rota para pegar todas as transações
 <img src="./assets/transactions.png" height="500" width="900" />
+
+## Rota de resumo de todas as transações feitas
 <img src="./assets/summary.png" height="500" width="900" />
-<img src="./assets/serachById.png" height="500" width="900" />
+
+### Base de Dados
 <img src="./assets/database.png" height="500" width="900" />
 
 ######
 ####
-##
+## Buscando todas transações
 <img src="./assets/Alltransactions.png" height="500" width="900" />
+
+### Buscando pelo Id
 <img src="./assets/serachById.png" height="500" width="900" />
+
+### consultando o total das transações
 <img src="./assets/summaryTransactions.png" height="500" width="900" />
+
+### registando transação
 <img src="./assets/registerTransactions.png" height="500" width="900" />
 
