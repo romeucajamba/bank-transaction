@@ -3,7 +3,7 @@ import { connection} from '../../database/db';
 import { z } from 'zod';
 
 export async function getTransactionById(server:FastifyInstance){
-    server.get('/:id', async (request) => {
+    server.get('/transaction/:id', async (request) => {
         const getTransactionParamsSchema = z.object({
             id: z.string().uuid(),
         })

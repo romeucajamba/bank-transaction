@@ -6,7 +6,7 @@ import { z } from 'zod';
 
 export async function transactionsRoute(server: FastifyInstance) {
 
-    server.post('/', async (request, reply) => {
+    server.post('/transaction', async (request, reply) => {
 
         const createTransactionBodySchema = z.object({
             title: z.string(),
