@@ -31,3 +31,28 @@ Um sistema para criação de transações, permitindo a consulta de cada transa�
 
 - Linguagem de programação para tipagens estáticas
 - <img align="center" alt="Rafa-Ts" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
+
+## Cookies
+- npm i @fastify/cookie 
+
+
+
+######
+### 
+###
+<img src="./assets/server.png" height="500" width="900" />
+<img src="./assets/register.png" height="500" width="900" />
+<img src="./assets/serachById.png" height="500" width="900" />
+<img src="./assets/transactions.png" height="500" width="900" />
+<img src="./assets/summary.png" height="500" width="900" />
+<img src="./assets/serachById.png" height="500" width="900" />
+<img src="./assets/database.png" height="500" width="900" />
+
+######
+####
+##
+<img src="./assets/Alltransactions.png" height="500" width="900" />
+<img src="./assets/serachById.png" height="500" width="900" />
+<img src="./assets/summaryTransactions.png" height="500" width="900" />
+<img src="./assets/registerTransactions.png" height="500" width="900" />
+

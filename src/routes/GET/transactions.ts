@@ -12,9 +12,7 @@ export async function getTransaction(server:FastifyInstance){
         const sessionId = request.cookies
 
 
-        const transactions = await connection.trasactions.findMany({
-            where:{ sessionId }
-        })
+        const transactions = await connection.trasactions.findMany()
 
         return {transactions}
     })

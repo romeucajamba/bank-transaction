@@ -6,7 +6,6 @@ import { transactionsRoute } from './routes/POST/transactions';
 import { getSummary } from './routes/GET/summary';
 import { getTransactionById } from './routes/GET/transaction_id';
 import { getTransaction } from './routes/GET/transactions';
-import { request } from 'http';
 
 const server = fastify()
 

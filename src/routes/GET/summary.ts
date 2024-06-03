@@ -14,9 +14,6 @@ export async function getSummary(server:FastifyInstance) {
         const summary = await connection.trasactions.aggregate({
             _sum:{
                 amount:true
-            },
-            where:{
-                sessionId
             }
         })
 
