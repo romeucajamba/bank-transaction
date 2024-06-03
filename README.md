@@ -36,8 +36,6 @@ Um sistema para criação de transações, permitindo a consulta de cada transa�
 - npm i @fastify/cookie 
 
 
-
-######
 ### 
 ### Registando todas as rotas/plugins 
 <img src="./assets/server.png" height="500" width="900" />
@@ -71,3 +69,7 @@ Um sistema para criação de transações, permitindo a consulta de cada transa�
 ### registando transação
 <img src="./assets/registerTransactions.png" height="500" width="900" />
 
+
+### para usar o projecto
+- Baixe o projecto na sua máquina
+- roda no terminal do directório do projecto baixado 'npm i ou npm install' instalará todas as dependências do projecto.
