@@ -1,4 +1,5 @@
 import fastify from 'fastify';
+import  cookie  from '@fastify/cookie';
 
 //Rotas
 import { transactionsRoute } from './routes/POST/transactions';
@@ -7,6 +8,9 @@ import { getTransactionById } from './routes/GET/transaction_id';
 import { getTransaction } from './routes/GET/transactions';
 
 const server = fastify()
+
+//Nosso cookie
+server.register(cookie)
 
 //Registar plugins ou rotas
 server.register(transactionsRoute)

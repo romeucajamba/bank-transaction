@@ -16,6 +16,6 @@ model Trasactions {
   title String 
   amount Decimal
   createdAt DateTime @default(now()) @map("created_at")
-
+  sessionId String  @default(uuid()) @map("session_id")
   @@map("transactions")
 }
