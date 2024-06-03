@@ -72,4 +72,6 @@ Um sistema para criação de transações, permitindo a consulta de cada transa�
 
 ### para usar o projecto
 - Baixe o projecto na sua máquina
-- roda no terminal do directório do projecto baixado 'npm i ou npm install' instalará todas as dependências do projecto.
+- execute no terminal do directório do projecto baixado 'npm i ou npm install' instalará todas as dependências do projecto.
+- Execute novamente no terminal 'npm run server' para rodar o servidor
+- execute no terminal 'npx prisma studio' para ver a Base de dados em um novo terminal no directório do projecto no VSCode
