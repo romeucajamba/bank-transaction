@@ -1,9 +1,24 @@
-import { describe, test, expect } from 'vitest';
+import { describe, test, beforeAll, afterAll } from 'vitest';
+import request from 'supertest';
+import { server } from '../app';
 
-describe('first unity test', () => {
-    test('shold be equal 201', () => {
-        const result = 201
+beforeAll( async () => {
+    await server.ready()
+})
 
-        expect(result).toEqual(201)
+afterAll( async () => {
+    await server.close()
+})
+
+
+describe('create transaction', () => {
+    test('shold return 201, that mean the transaction created', async () => {
+        
+      await request(server.server).post('/transactions').send({
+        title: 'New transaction created on test',
+        amount: 500,
+        type: 'credit'
+      }).expect(201)
+
     })
 })
