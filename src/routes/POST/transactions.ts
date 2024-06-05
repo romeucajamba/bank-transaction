@@ -35,7 +35,7 @@ export async function transactionsRoute(server: FastifyInstance) {
                 title,
                 /**Se a transação for credito, vai manter o valor(amount) do jeito que está, se for debito, vai multiplicar por -1 */
                 amount: type == 'credit' ? amount : amount * -1,
-                sessionId: sessionId
+                //Aqui estava o sessionId do cookie 
             }
         })
         return reply.status(201).send()

@@ -4,8 +4,8 @@ import { z } from 'zod';
 import { checkSessionExistent } from '../../middleware/check_session_existents';
 
 export async function getTransactionById(server:FastifyInstance){
-    server.get('/transactions/:id', {
-        preHandler: [checkSessionExistent] //Vai validar o cookie antes de executar o código abaixo
+    server.get('/transaction/:id', {
+       // preHandler: [checkSessionExistent] //Vai validar o cookie antes de executar o código abaixo
     }, async (request) => {
 
         const { sessionId } = request.cookies

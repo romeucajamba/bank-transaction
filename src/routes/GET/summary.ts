@@ -5,7 +5,7 @@ import { checkSessionExistent } from '../../middleware/check_session_existents';
 export async function getSummary(server:FastifyInstance) {
     server.get('/transactions/summary',{
 
-        preHandler: [checkSessionExistent],
+       // preHandler: [checkSessionExistent],
 
     }, async (request) => {
 
