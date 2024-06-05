@@ -1,7 +1,10 @@
 import { server } from './app';
+import { env } from './env/index';
+
+
 
 server.listen({
-    port: 4000,
+    port: env.PORT,
 }).then(() => {
-    console.log('server running in port 3333')
+    console.log('server running in port 4000')
 })
