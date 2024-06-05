@@ -1,2 +1,8 @@
+## Dependencies
 node_modules
+
+## Evironment
 .env
+
+## Dist or build
+dist
