@@ -11,16 +11,6 @@ const envSchema = z.object({
     PORT: z.coerce.number().default(4000)
 }) 
 
-/**
- * 
- * 
- * DATABASE_URL="file:./dev.db"
-
-
-
-
-
- */
 
 
 export const env = envSchema.parse(process.env)
